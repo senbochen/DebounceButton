@@ -5,6 +5,11 @@
   "author": "chensongbai",
   "license": "MIT",
   "description": "element-ui 按钮的二次封装",
+  "main": "lib/index.umd.min.js ",
+   "files": [
+    "lib",
+    "packages"
+  ],
   "keywords": [
     "element-ui",
     "chen-button"
@@ -18,7 +23,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name index --dest lib packages/index.js"
   },
   "dependencies": {
     "chen-button": "^0.1.0",
