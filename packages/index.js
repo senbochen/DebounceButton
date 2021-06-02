@@ -1,6 +1,6 @@
 // 导入面包屑组件
-import chenButton from '../src/components/chen-button.vue'
-import plBotton from '../src/components/pl-button.vue'
+import chenButton from './components/chen-button.vue'
+import plBotton from './components/pl-button.vue'
 // 存储组件列表
 const components = [
   chenButton,
