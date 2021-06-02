@@ -1,12 +1,12 @@
 {
   "name": "chen-button",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "author": "chensongbai",
   "license": "MIT",
   "description": "element-ui 按钮的二次封装",
   "main": "lib/index.umd.min.js ",
-   "files": [
+  "files": [
     "lib",
     "packages"
   ],
@@ -19,7 +19,6 @@
     "url": "https://github.com/senbochen/eslint-vue-config.git"
   },
   "homepage": "https://github.com/senbochen/eslint-vue-config",
-
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -27,7 +26,6 @@
     "lib": "vue-cli-service build --target lib --name index --dest lib packages/index.js"
   },
   "dependencies": {
-    "chen-button": "^0.1.0",
     "core-js": "^3.6.5",
     "element-ui": "^2.15.2",
     "vue": "^2.6.11"
