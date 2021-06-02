@@ -1,6 +1,8 @@
 #### eslint + vscode + element-ui 二次封装
 
-#### 有 vscode 的 setting.json 配置文件 ，保存自动格式化 #先安装 element-ui
+#### 有 vscode 的 setting.json 配置文件 ，保存自动格式化
+
+##### 先安装 element-ui
 
 ```
    npm i element-ui
@@ -40,16 +42,20 @@
 
 ```
 
-| props 名称                 | 是否必须 | 默认值 | 类型    | 描述             |
-| -------------------------- | :------: | -----: | ------- | ---------------- |
-| auto-comfirm               |    否    |   true | Boolean | 是否需要二次确认 |
-| confirm-config             |    否    |      { |
-| massage: '确定要删除吗？', |
+| props 名称     | 是否必须 |   默认值 | 类型     | 描述                   |
+| -------------- | :------: | -------: | -------- | ---------------------- |
+| auto-comfirm   |    否    |     true | Boolean  | 是否需要二次确认       |
+| confirm-config |    否    |      { } | Object   | 二次确认类型弹框的信息 |
+| confirm        |    是    | function | Function | 点击确定按钮后的操作   |
+| cancle         |    是    | function | Function | 点击取消按钮之后的操作 |
 
+```
+confirm-config 的默认值是
+      {
+        massage: '确定要删除吗？',
         title: '温馨提示',
         confirmButtonText: '确定',
         cancelButtonText: '取消',
-        type: 'warning'} | Object   | 二次确认类型信息
-
-| confirm | 是 | function | Function | 点击确定按钮后的操作 |
-|cancle |是| function | Function | 点击取消按钮之后的操作
+        type: 'warning'
+      }
+```
