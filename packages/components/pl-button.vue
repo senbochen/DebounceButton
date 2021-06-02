@@ -1,9 +1,5 @@
 <template>
-  <el-button
-    v-bind="$attrs"
-    type="primary"
-    @click="handlerClick"
-  >
+  <el-button v-bind="$attrs" type="primary" @click="handlerClick">
     <slot />
   </el-button>
 </template>
@@ -14,7 +10,7 @@ export default {
   props: {
     autoComfirm: {
       type: Boolean,
-      required: false,
+      required: true,
       default: false
     },
     confirmConfig: {

@@ -1,11 +1,13 @@
 module.exports = {
-  indexPath: 'index.js',// 输出路径
   'lintOnSave': true,
+  runtimeCompiler: true,
+  publicPath: './',
   'chainWebpack': (config) => {
     config.module.rule('eslint').rule('js')
       .include
       .add(__dirname + 'packages')
-      .end()
+      .end().use('babel')
+      .loader('babel-loader')
     config.module.rule('eslint').use('eslint-loader')
   }
 }

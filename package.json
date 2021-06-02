@@ -1,18 +1,19 @@
 {
   "name": "chen-button",
-  "version": "0.1.2",
+  "version": "0.3.4",
   "private": false,
   "author": "chensongbai",
   "license": "MIT",
   "description": "element-ui 按钮的二次封装",
-  "main": "lib/index.common.js ",
+  "main": "./lib",
   "files": [
     "lib",
     "packages"
   ],
   "keywords": [
     "element-ui",
-    "chen-button"
+    "chen-button",
+    "pl-button"
   ],
   "repository": {
     "type": "git",
@@ -23,7 +24,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name index --dest lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name index --dest lib ./packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -31,6 +32,7 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.14.4",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "^4.5.13",
     "@vue/cli-service": "~4.5.0",

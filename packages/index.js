@@ -1,3 +1,4 @@
+import 'element-ui/lib/theme-chalk/index.css'
 // 导入面包屑组件
 import chenButton from './components/chen-button.vue'
 import plBotton from './components/pl-button.vue'
