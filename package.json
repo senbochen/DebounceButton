@@ -1,19 +1,19 @@
 {
-  "name": "chen-button",
-  "version": "0.3.6",
+  "name": "debounce-button",
+  "version": "0.4.4",
   "private": false,
   "author": "chensongbai",
   "license": "MIT",
-  "description": "element-ui 按钮的二次封装",
-  "main": "./lib",
+  "description": "element-ui 防抖和节流按钮的二次封装及按钮的二次确认",
+  "main": "lib/index.common.js",
   "files": [
     "lib",
     "packages"
   ],
   "keywords": [
     "element-ui",
-    "chen-button",
-    "pl-button"
+    "debounce-button",
+    "confirm-button"
   ],
   "repository": {
     "type": "git",

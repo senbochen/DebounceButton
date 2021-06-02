@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'ChenButton',
+  name: 'DebounceButton',
   props: {
     autoLoading: {
       default: true,

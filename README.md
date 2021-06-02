@@ -8,10 +8,17 @@
    npm i element-ui
 ```
 
-#### 组件 chen-button 是在防抖的场景下应用
+#### 安装 debounce-button 再 Vue.use(debounce-button)
 
 ```
-  举例： <chen-button @click="getData">2123123221</chen-button>
+    npm i debounce-button
+    Vue.use(debounce-button)
+```
+
+#### 组件 debounce-button 是在防抖的场景下应用
+
+```
+  举例：  <debounce-button @click="getData">2123123221</debounce-button>
         methods: {
           getData (done) {
             setTimeout(() => {
@@ -24,10 +31,10 @@
 
 ```
 
-#### 组件 pl-button 是在点击按钮二次确认的情况下使用
+#### 组件 confirm-button 是在点击按钮二次确认的情况下使用
 
 ```
-   <pl-button
+   <confirm-button
       @confirm="confirm"
       @cancle="cancle"
       auto-comfirm
@@ -38,24 +45,29 @@
         cancelButtonText: '取消',
         type: 'warning'
       }"
-      >地扫活动是怕</pl-button
+      >地扫活动是怕</confirm-button
+    >
 
 ```
 
-| props 名称     | 是否必须 |   默认值 | 类型     | 描述                   |
+| props          | 是否必须 |   默认值 | 类型     | 描述                   |
 | -------------- | :------: | -------: | -------- | ---------------------- |
 | auto-comfirm   |    否    |     true | Boolean  | 是否需要二次确认       |
 | confirm-config |    否    |      { } | Object   | 二次确认类型弹框的信息 |
 | confirm        |    是    | function | Function | 点击确定按钮后的操作   |
 | cancle         |    是    | function | Function | 点击取消按钮之后的操作 |
 
+#### 补充:
+
 ```
+
 confirm-config 的默认值是
-      {
-        massage: '确定要删除吗？',
-        title: '温馨提示',
-        confirmButtonText: '确定',
-        cancelButtonText: '取消',
-        type: 'warning'
-      }
+{
+massage: '确定要删除吗？',
+title: '温馨提示',
+confirmButtonText: '确定',
+cancelButtonText: '取消',
+type: 'warning'
+}
+
 ```

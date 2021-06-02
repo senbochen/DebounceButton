@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'PlButton',
+  name: 'ConfirmButton',
   props: {
     autoComfirm: {
       type: Boolean,
