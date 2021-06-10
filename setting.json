@@ -34,7 +34,7 @@
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "html.format.wrapAttributes": "auto",
+  "html.format.wrapAttributes": "force-expand-multiline",
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "javascript.preferences.quoteStyle": "single",
   "search.showLineNumbers": true,
@@ -73,16 +73,9 @@
     "background-size": "cover",
     "opacity": 0.1
   },
-  "background.customImages": [
-    "file:///D:/bg1.jpg"
-  ],
   "git.enableSmartCommit": true,
   "terminal.integrated.rendererType": "dom",
-  "terminal.integrated.shell.windows": "F:\\Program Files\\Git\\bin\\bash.exe",
   "git.confirmSync": false,
-  "gitlens.advanced.messages": {
-    "suppressSupportGitLensNotification": true
-  },
   "gitlens.gitCommands.closeOnFocusOut": true,
   "editor.columnSelection": false,
   "easeServer.portNumber": 9595,
@@ -112,11 +105,14 @@
   "tabnine.experimentalAutoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "never",
   "vetur.format.defaultFormatter.js": "vscode-typescript",
-  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatter.html": "prettier",
   "vetur.format.defaultFormatterOptions": {
-    "wrap_attributes": "force-expand-multiline"
+    "prettier": {
+      "semi": false,
+      "singleQuote": true,
+      "trailingComma": false
+    }
   },
   "terminal.integrated.tabs.enabled": true,
-  "editor.fontWeight": "normal",
   "workbench.iconTheme": "vscode-icons"
 }

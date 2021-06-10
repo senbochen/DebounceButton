@@ -1,5 +1,4 @@
-import 'element-ui/lib/theme-chalk/index.css'
-// 导入面包屑组件
+
 import debounceButton from './components/debounce-button.vue'
 import confirmButton from './components/confirm-button.vue'
 // 存储组件列表

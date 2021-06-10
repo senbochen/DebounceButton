@@ -15,14 +15,14 @@
     Vue.use(debounce-button)
 ```
 
-#### 组件 debounce-button 是在防抖的场景下应用
+#### 组件 debounce-button 是点击发布或确定的场景下应用，按钮开启 loading 效果，禁止连续点击
 
 ```
   举例：  <debounce-button @click="getData">2123123221</debounce-button>
         methods: {
           getData (done) {
             setTimeout(() => {
-              done()
+              done() //关闭按钮loading效果
               console.log('请求数据')
             }, 2000)
 

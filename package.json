@@ -1,10 +1,10 @@
 {
   "name": "debounce-button",
-  "version": "0.4.4",
+  "version": "0.4.7",
   "private": false,
   "author": "chensongbai",
   "license": "MIT",
-  "description": "element-ui 防抖和节流按钮的二次封装及按钮的二次确认",
+  "description": "element-ui 按钮加上loading效果及按钮的二次确认的二次封装",
   "main": "lib/index.common.js",
   "files": [
     "lib",
